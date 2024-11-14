@@ -1,12 +1,27 @@
-- 👋 Hi, I’m @Aliyaansari1
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+#include<stdio.h>
 
-<!---
-Aliyaansari1/Aliyaansari1 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+int main()
+{  
+    int i,j,m,n,temp,min;
+    int a[]={5,7,2,8,1};
+    for(i=0;i<n-1;i++)
+       {
+          min=i;
+          for(j=i+1;j<n;j++)
+              {
+                if(a[j]<a[min]);
+                    min=j;
+              }          
+                  temp=a[i];
+                  a[i]=a[min];
+                  a[min]=temp;
+              }    
+                printf("printed sorted, array using selection sort=\r");
+                for(i=0;i<n;i++)
+              { 
+                printf("%d",a[i]);
+              }
+              
+    return 0;
+    
+}
