@@ -25,27 +25,28 @@ int main()
     return 0;
     
 }
-include<stdio.h>
+include <stdio.h>
 
-int main() {
-    int i,j,min, temp; 
-    int a[]={5,7,2,8,1};
-    for (i=0;i<4; i++)
+int main() 
+{
+    int i,j;
+    for(i=1;i<=3;i++)
     {
-        min=i;
-        for(j=i+1;j<5;j++)
+        for(j=1;j<=i;j++)
         {
-            if(a[j]<a[min])
-        min = j;
+            printf("* ");
+        }
+        printf("\n");
     }
-    temp=a[i];
-    a[i]= a[min];
-    a[min]=temp;
-}
-    printf("prented sorted array using selection sort=\n");
-    for(i=0;i<5;i++)
+    for(i=3;i>=0;i--)
     {
-        printf("%d",a[i]);
+        for(j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
     }
-  return 0;
+    
+    
+    return 0;
 }
